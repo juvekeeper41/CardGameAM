@@ -6,4 +6,9 @@
 //  Copyright © 2016 Osborne, Jacob. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PlayingCard : Card
+{
+    
+}
