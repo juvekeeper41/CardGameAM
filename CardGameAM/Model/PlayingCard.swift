@@ -74,6 +74,7 @@ class PlayingCard : Card
     {
         
         super.init()
+        
         frontImage = UIImage()
         color = UIColor()
         rank = 0
