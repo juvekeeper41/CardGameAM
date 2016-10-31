@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
+    internal var rank : Int
     {
         get
         {
@@ -22,7 +22,7 @@ class PlayingCard : Card
         }
     }
 
-    private var suit : String
+    internal var suit : String
     {
         get
         {
@@ -34,7 +34,7 @@ class PlayingCard : Card
         }
     }
     
-    private var color : UIColor
+    internal var color : UIColor
     {
         get
         {
@@ -46,7 +46,7 @@ class PlayingCard : Card
         }
     }
     
-    private var frontImage : UIImage
+    internal var frontImage : UIImage
         {
         get
         {
@@ -115,6 +115,11 @@ class PlayingCard : Card
     class func validRanks() -> [String]
     {
         return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
     }
     
     class func validSuits() -> [String]
