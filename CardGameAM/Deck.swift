@@ -6,4 +6,10 @@
 //  Copyright © 2016 Osborne, Jacob. All rights reserved.
 //
 
-import UIKit
+import Foundation
+
+class Deck
+{
+    
+}
+
