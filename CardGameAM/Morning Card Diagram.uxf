@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>130</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Package :: Class
+--
+Data Members
+
+--
+Constructors and Methods
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>10</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Card
+--
+-backImage : UIImage
+-isFaceUp : Bool
+--
++ init()
++ getBackImage() : UIImage
++ isFaceUp() : Bool
++ toString() : String
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>250</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: PlayingCard
+--
+-suit : String
+-color : UIColor
+-rank : Int
+-frontImage : UIImage
+--
++ get/set
++ init
+
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>140</y>
+      <w>220</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>520</x>
+      <y>450</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Deck
+--
+-cards : PlaingCard[]
+--
++init()
++shuffle : Void
++order : Void
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>80</x>
+      <y>440</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Deck
+--
+
+--
+init()
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
