@@ -11,52 +11,13 @@ import UIKit
 class PlayingCard : Card
 {
     internal var rank : Int
-    {
-        get
-        {
-            return self.rank
-        }
-        set(rank)
-        {
-            self.rank = rank
-        }
-    }
 
     internal var suit : String
-    {
-        get
-        {
-            return self.suit
-        }
-        set(suit)
-        {
-            self.suit = suit
-        }
-    }
     
     internal var color : UIColor
-    {
-        get
-        {
-            return self.color
-        }
-        set(color)
-        {
-            self.color = color
-        }
-    }
     
     internal var frontImage : UIImage
-        {
-        get
-        {
-            return self.frontImage
-        }
-        set(frontImage)
-        {
-            self.frontImage = frontImage
-        }
-    }
+    
 
     
     func getRank() -> Int
@@ -72,23 +33,23 @@ class PlayingCard : Card
 
     override init()
     {
-        
-        super.init()
-        
-        //frontImage = UIImage(named: "cardfront")!
+        frontImage = UIImage(named: "cardfront")!
         color = UIColor.blueColor()
         rank = 0
         suit = String()
+        super.init()
+        
+        
     }
     
     init(withRank: Int, ofSuit: String)
     {
-        super.init()
+        
         frontImage = UIImage(named: "cardfront")!
         color = UIColor.blueColor()
-        
         rank = withRank
         suit = ofSuit
+        super.init()
         
     }
 
@@ -97,7 +58,7 @@ class PlayingCard : Card
         let facing : String
         if self.isUp()
         {
-            facing = " is facce up."
+            facing = " is face up."
         }
         else
         {
