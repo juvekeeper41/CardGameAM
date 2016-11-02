@@ -33,10 +33,10 @@ class PlayingCard : Card
 
     override init()
     {
-        frontImage = UIImage(named: "cardfront")!
-        color = UIColor.blueColor()
-        rank = 0
-        suit = String()
+        self.frontImage = UIImage(named: "cardfront")!
+        self.color = UIColor.blueColor()
+        self.rank = 0
+        self.suit = String()
         super.init()
         
         
