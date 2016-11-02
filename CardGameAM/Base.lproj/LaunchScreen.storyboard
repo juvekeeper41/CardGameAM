@@ -58,9 +58,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vlad" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-IK-vhP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Snoop Doge" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-2e-JAJ">
-                                <rect key="frame" x="152" y="196" width="202" height="187"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -71,7 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Snoop Doge" width="539" height="758"/>
         <image name="Vlad" width="392" height="483"/>
         <image name="doge sprite" width="80" height="80"/>
     </resources>
