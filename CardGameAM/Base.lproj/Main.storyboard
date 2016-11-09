@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -18,6 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-HT-DQs">
+                                <rect key="frame" x="279" y="55" width="42" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="279" y="28" width="242" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-fo-WVp">
                                 <rect key="frame" x="138" y="95" width="325" height="409"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -41,27 +49,14 @@
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJR-zi-957"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-HT-DQs">
-                                <rect key="frame" x="279" y="48" width="42" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="279" y="28" width="242" height="21"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="K0Y-fo-WVp" secondAttribute="trailing" constant="117" id="QO5-Eo-nDn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lDc-HT-DQs" secondAttribute="trailing" constant="259" id="UDH-rL-0X3"/>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="top" secondItem="lDc-HT-DQs" secondAttribute="bottom" constant="20" id="UVM-nC-8QS"/>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFD-h8-ZNG"/>
-                            <constraint firstItem="lDc-HT-DQs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="259" id="fa1-Lm-c8g"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K0Y-fo-WVp" secondAttribute="bottom" constant="96" id="gA6-lf-DUz"/>
-                            <constraint firstItem="lDc-HT-DQs" firstAttribute="width" secondItem="K0Y-fo-WVp" secondAttribute="width" id="gQB-12-TSR"/>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="top" secondItem="lDc-HT-DQs" secondAttribute="bottom" constant="20" id="o41-wR-HbN"/>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="118" id="tNe-77-FwK"/>
+                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="top" secondItem="lDc-HT-DQs" secondAttribute="bottom" constant="20" id="7Ge-lX-EGN"/>
+                            <constraint firstItem="lDc-HT-DQs" firstAttribute="width" secondItem="K0Y-fo-WVp" secondAttribute="width" id="LzN-qB-KWN"/>
+                            <constraint firstItem="lDc-HT-DQs" firstAttribute="centerX" secondItem="K0Y-fo-WVp" secondAttribute="centerX" id="k5j-VE-Tt5"/>
+                            <constraint firstItem="lDc-HT-DQs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kfK-Aa-vGx"/>
+                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zcF-eK-7ME"/>
                         </constraints>
                     </view>
                     <connections>
