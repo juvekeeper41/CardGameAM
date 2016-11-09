@@ -29,12 +29,25 @@ class CardGameController : UIViewController
     @IBAction func flipCard(sender: UIButton)
     {
         clickCount += 1
-        let words = "The card has been clicked \(clickCount) times"
+        let words = "The random card button has been clicked \(clickCount) times"
         CardLabel.text = words
         
+        if let currentCard = currentDeck.drawRandomCard() as? PlayingCard
+        {
+            CardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+        }
+        else
+        {
+            CardLabel.text = "The deck was exhausted - reinitializing"
+            self.currentDeck = PlayingCardDeck()
+        }
+        
+        
+        
+    }
+    
         func orderDeck()
         {
             
         }
-    }
 }

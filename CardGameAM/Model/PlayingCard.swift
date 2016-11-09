@@ -29,6 +29,11 @@ class PlayingCard : Card
         {
         self.rank = rank
         }
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
+    }
     
 
     override init()
