@@ -14,10 +14,11 @@ class StupidGame
     
     //Declaration Section
     internal var score : Int
-    internal var discardPile : UIImage
-    internal var winnerPile : UIImage
-    internal var hand : UIImage
-    internal var drawingPile : UIImage
+    internal var discardPile : Int
+    internal var winnerPile : Int
+    internal var hand : Int
+    internal var drawingPile : Int
+    internal var drawingDeck : PlayingCardDeck
     
     
    
@@ -25,18 +26,16 @@ class StupidGame
     init()
     {
         self.score = 0
-        self.discardPile = UIImage()
-        self.winnerPile = UIImage()
-        self.hand = UIImage()
-        self.drawingPile = UIImage()
+        self.discardPile = Int()
+        self.winnerPile = Int()
+        self.hand = Int()
+        self.drawingPile = Int()
+        self.drawingDeck = PlayingCardDeck()
     }
-    
-    
-    
     
     //Methods
     func startGame() -> Void
     {
-        
+        drawingDeck.shuffleDeck()
     }
 }
