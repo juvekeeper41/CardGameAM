@@ -61,7 +61,7 @@ class PlayingCard : Card
     override func toString() -> String
     {
         let facing : String
-        if self.isUp()
+        if self.isFaceUp()
         {
             facing = " is face up."
         }

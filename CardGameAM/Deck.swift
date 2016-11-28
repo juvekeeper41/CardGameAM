@@ -14,7 +14,7 @@ class Deck
     
     func shuffleDeck() -> Void
     {
-        //Creates a temporary array to holf card objects.
+        //Creates a temporary array to hold card objects.
         var tempDeck = [Card]()
         
         //Repeat until there are no cards in self.cards
