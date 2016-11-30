@@ -26,9 +26,9 @@ class Card
    
     }
     
-    func isUp() -> Bool
+    func isFaceUp() -> Bool
     {
-        return isFaceUp
+        return isFaceUp()
     }
         
     func setIsFacing(isFaceUp : Bool) -> Void
