@@ -31,6 +31,7 @@ class StupidGame
         self.hand = [PlayingCard]()
         self.drawingPile = Int()
         self.drawingDeck = PlayingCardDeck()
+//      playMatchGame()
     }
     
     //Methods
@@ -78,17 +79,17 @@ class StupidGame
         return points - negativePoints
     }
     
-    func playMatchGame() -> Void
-    {
-        for(var cardsLeft = 0; cardsLeft < drawingDeck.count; cardsLeft += 1)
-        {
-            
-        }
-        checkMatch()
-        score += checkMatch()
-        hand.removeAll()
-        
-    }
+//    func playMatchGame() -> Void
+//    {
+//            var cardCount = 52
+//            while(cardCount >= 7 )
+//            {
+//                checkMatch()
+//                score += checkMatch()
+//                hand.removeAll()
+//                
+//                cardCount -= 7
+//            }
 }
 
 

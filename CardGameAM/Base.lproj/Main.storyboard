@@ -17,17 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-HT-DQs">
-                                <rect key="frame" x="279" y="55" width="42" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="279" y="28" width="242" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-fo-WVp">
-                                <rect key="frame" x="138" y="95" width="325" height="409"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-fo-WVp">
+                                <rect key="frame" x="241" y="218" width="119" height="162"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Text" backgroundImage="Vlad">
                                     <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,19 +40,173 @@
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJR-zi-957"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-rj-2Qo">
+                                <rect key="frame" x="36" y="218" width="119" height="163"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMc-Qx-mIK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUw-Hy-eBF">
+                                <rect key="frame" x="436" y="218" width="119" height="163"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHN-Tb-J5N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9Z-7u-lxA">
+                                <rect key="frame" x="436" y="28" width="119" height="162"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YO-KW-Lmk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-fm-9xe">
+                                <rect key="frame" x="436" y="417" width="119" height="163"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dct-ph-qq1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-Cl-OPM">
+                                <rect key="frame" x="36" y="20" width="119" height="162"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByF-6r-G46"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmu-sv-Ljg">
+                                <rect key="frame" x="36" y="417" width="119" height="163"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Text" backgroundImage="Vlad">
+                                    <color key="titleColor" red="0.1798846056" green="0.95548856790000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="125" height="409"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="138" y="95" width="525" height="409"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuk-7a-v1y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-2Z-Dq8">
+                                <rect key="frame" x="256" y="486" width="88" height="30"/>
+                                <state key="normal" title="Total Points"/>
+                                <connections>
+                                    <action selector="totalPoints:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIk-bE-uef"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-HT-DQs">
+                                <rect key="frame" x="275" y="92" width="50" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="279" y="28" width="242" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="top" secondItem="lDc-HT-DQs" secondAttribute="bottom" constant="20" id="7Ge-lX-EGN"/>
-                            <constraint firstItem="lDc-HT-DQs" firstAttribute="width" secondItem="K0Y-fo-WVp" secondAttribute="width" id="LzN-qB-KWN"/>
-                            <constraint firstItem="lDc-HT-DQs" firstAttribute="centerX" secondItem="K0Y-fo-WVp" secondAttribute="centerX" id="k5j-VE-Tt5"/>
-                            <constraint firstItem="lDc-HT-DQs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kfK-Aa-vGx"/>
-                            <constraint firstItem="K0Y-fo-WVp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zcF-eK-7ME"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="CardButton" destination="K0Y-fo-WVp" id="rQ3-qW-CqT"/>
                         <outlet property="CardLabel" destination="lDc-HT-DQs" id="ZQZ-TO-wSx"/>
+                        <outlet property="bottomLeftCard" destination="nmu-sv-Ljg" id="tgW-Q8-iwT"/>
+                        <outlet property="bottomRightCard" destination="Cfg-fm-9xe" id="AAe-jf-Bpa"/>
+                        <outlet property="centerLeftCard" destination="wkm-rj-2Qo" id="3qJ-Ys-qaU"/>
+                        <outlet property="centerRightCard" destination="vUw-Hy-eBF" id="jVs-qg-gUg"/>
+                        <outlet property="topLeftCard" destination="1Xk-Cl-OPM" id="4GQ-gz-jhS"/>
+                        <outlet property="topRightCard" destination="T9Z-7u-lxA" id="cHp-x0-6f9"/>
+                        <outlet property="totalPoints" destination="bOz-2Z-Dq8" id="S6W-mu-73D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,9 +16,6 @@ class PlayingCard : Card
     
     internal var color : UIColor
     
-    internal var frontImage : UIImage
-    
-
     
     func getRank() -> Int
         {
@@ -38,7 +35,6 @@ class PlayingCard : Card
 
     override init()
     {
-        self.frontImage = UIImage(named: "Vlad")!
         self.color = UIColor.blueColor()
         self.rank = 0
         self.suit = String()
@@ -50,7 +46,6 @@ class PlayingCard : Card
     init(withRank: Int, ofSuit: String)
     {
         
-        frontImage = UIImage(named: "Vlad")!
         color = UIColor.blueColor()
         rank = withRank
         suit = ofSuit
@@ -61,7 +56,7 @@ class PlayingCard : Card
     override func toString() -> String
     {
         let facing : String
-        if self.isFaceUp()
+        if self.isUp()
         {
             facing = " is face up."
         }

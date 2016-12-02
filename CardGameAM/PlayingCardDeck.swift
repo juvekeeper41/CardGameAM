@@ -18,8 +18,8 @@ class PlayingCardDeck : Deck
          {
             for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
             {
-            let currentCard = PlayingCard(withRank: rank, ofSuit : suit)
-            self.cards.append(currentCard)
+                let currentCard = PlayingCard(withRank: rank, ofSuit : suit)
+                self.cards.append(currentCard)
             }
          }
     }

@@ -23,18 +23,14 @@ class Card
         let description = "The card is \(isFaceUp)"
         return description
     }
-   
-    }
     
-    func isFaceUp() -> Bool
+    func isUp() -> Bool
     {
-        return isFaceUp()
+        return isFaceUp
     }
         
     func setIsFacing(isFaceUp : Bool) -> Void
     {
         self.isFaceUp = isFaceUp
-    {
-        }
-    
+    }
 }
