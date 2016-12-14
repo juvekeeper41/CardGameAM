@@ -31,7 +31,7 @@ class StupidGame
         self.hand = [PlayingCard]()
         self.drawingPile = Int()
         self.drawingDeck = PlayingCardDeck()
-//      playMatchGame()
+        //playMatchGame()
     }
     
     //Methods
@@ -55,24 +55,23 @@ class StupidGame
     func checkMatch() -> Int
     {
         var points = Int()
-        
-        for(var OuterLoop = 0; OuterLoop < hand.count; OuterLoop += 1)
+        let tempCount = hand.count
+        for var outer in 0..<tempCount
         {
-            let handSize = hand.count
-            for(var InnerLoop = 0; InnerLoop < hand.count; InnerLoop += 1)
+           for var inner in 0..<tempCount
             {
-                if(OuterLoop != InnerLoop && hand[OuterLoop].rank == hand[InnerLoop].rank)
+                if(outer != inner) && hand[outer].rank == hand[inner].rank
                 {
-                    hand.removeAtIndex(InnerLoop)
+                    hand.remove(at: inner)
                     points += 2
-                    InnerLoop -= 1
+                    inner -= 1
                 }
             }
-            if(handSize != hand.count)
+            if(hand.count != tempCount)
             {
-                hand.removeAtIndex(OuterLoop)
+                hand.remove(at: outer)
                 points += 2
-                OuterLoop -= 1
+                outer -= 1
             }
         }
         let negativePoints = hand.count

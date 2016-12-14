@@ -19,24 +19,24 @@ class CardGameController : UIViewController
     @IBOutlet weak var centerRightCard: UIButton!
     @IBOutlet weak var bottomRightCard: UIButton!
     
-    private lazy var currentDeck = PlayingCardDeck()
-    private lazy var clickCount = Int()
-    private lazy var myGame = StupidGame()
+    fileprivate lazy var currentDeck = PlayingCardDeck()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var myGame = StupidGame()
     
     override func viewDidLoad()
     {
        myGame.startGame()
     }
     
-    @IBAction func flipCard(sender: UIButton)
+    @IBAction func flipCard(_ sender: UIButton)
     {
-        CardButton.setTitle("\(myGame.hand[0].getCardData())", forState: UIControlState.Normal)
-        topLeftCard.setTitle("\(myGame.hand[1].getCardData())", forState: UIControlState.Normal)
-        centerLeftCard.setTitle("\(myGame.hand[2].getCardData())", forState: UIControlState.Normal)
-        bottomLeftCard.setTitle("\(myGame.hand[3].getCardData())", forState: UIControlState.Normal)
-        topRightCard.setTitle("\(myGame.hand[4].getCardData())", forState: UIControlState.Normal)
-        centerRightCard.setTitle("\(myGame.hand[5].getCardData())", forState: UIControlState.Normal)
-        bottomRightCard.setTitle("\(myGame.hand[6].getCardData())", forState: UIControlState.Normal)
+        CardButton.setTitle("\(myGame.hand[0].getCardData())", for: UIControlState())
+        topLeftCard.setTitle("\(myGame.hand[1].getCardData())", for: UIControlState())
+        centerLeftCard.setTitle("\(myGame.hand[2].getCardData())", for: UIControlState())
+        bottomLeftCard.setTitle("\(myGame.hand[3].getCardData())", for: UIControlState())
+        topRightCard.setTitle("\(myGame.hand[4].getCardData())", for: UIControlState())
+        centerRightCard.setTitle("\(myGame.hand[5].getCardData())", for: UIControlState())
+        bottomRightCard.setTitle("\(myGame.hand[6].getCardData())", for: UIControlState())
 
         
 //        clickCount += 1

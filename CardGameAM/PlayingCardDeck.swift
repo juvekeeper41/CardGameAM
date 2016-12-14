@@ -14,14 +14,14 @@ class PlayingCardDeck : Deck
     {
         super.init()
         
-         for suit in PlayingCard.validSuits()
-         {
-            for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
+        for suit in PlayingCard.validSuits()
+        {
+            for rank in 1...PlayingCard.maxRank()
             {
                 let currentCard = PlayingCard(withRank: rank, ofSuit : suit)
                 self.cards.append(currentCard)
             }
-         }
+        }
     }
     
     func orderDeck() -> Void
@@ -29,13 +29,13 @@ class PlayingCardDeck : Deck
         var temp = [PlayingCard]()
         for suit in PlayingCard.validSuits()
         {
-            for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
+            for rank in 1...PlayingCard.maxRank()
             {
-                let index = cards.indexOf(
-                    {
+                let index = cards.index(
+                    where: {
                         ($0 as! PlayingCard).suit == suit && ($0 as! PlayingCard).rank == rank
-                    })
-                let tempCard = cards.removeAtIndex(index!) as! PlayingCard
+                })
+                let tempCard = cards.remove(at: index!) as! PlayingCard
                 temp.append(tempCard)
             }
         }
